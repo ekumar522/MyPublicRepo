@@ -18,14 +18,7 @@ public class Main {
 	private final static Logger log = LoggerFactory.getLogger(Main.class);
 	public static void main(String[] args) throws IOException, ConnectionException {
 		
-		Properties config = new Properties ();
-		InputStream input = new FileInputStream(args[0]);
-		
-			config.load(input);
-		
-			Ydc obj = new Ydc(args[0]);
-			P360 o = new P360(args[0]);
-			obj.GetCodeValues();
+	
 			log.info("+++++++++++++++++++++ Integration Completed +++++++++++++++++++++");
 				
 
